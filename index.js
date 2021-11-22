@@ -1,7 +1,7 @@
 {
     init: function(elevators, floors) {
-        let orders = []; // [[[floor,direction,orderCount]]]  // DO NOT TOUCH
-        let destinations = []; // DO NOT TOUCH
+        let orders = [];        // DO NOT TOUCH // [[[floor,direction,orderCount]]]  
+        let destinations = [];  // DO NOT TOUCH
         
         /******* Customisation Vars *******/
         let masterLoadFactor = 0.9;

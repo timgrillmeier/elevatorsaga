@@ -1,11 +1,14 @@
 {
     init: function(elevators, floors) {
-        let orders = []; // [[[floor,direction,orderCount]]]
-        let destinations = [];
+        let orders = []; // [[[floor,direction,orderCount]]]  // DO NOT TOUCH
+        let destinations = []; // DO NOT TOUCH
+        
+        /******* Customisation Vars *******/
         let masterLoadFactor = 0.9;
         let primeElevators = true;
         let arrayElevators = false;
         let neglectModifier = 0;
+        /******* Customisation Vars *******/
         
         // var elevator = elevators[0]; // Let's use the first elevator
         for (let i = 0; i < elevators.length; i++) {

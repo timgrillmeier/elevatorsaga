@@ -5,7 +5,7 @@
         let masterLoadFactor = 0.9;
         let primeElevators = true;
         let arrayElevators = false;
-        let neglectModifier = 1.5;
+        let neglectModifier = 0;
         
         // var elevator = elevators[0]; // Let's use the first elevator
         for (let i = 0; i < elevators.length; i++) {
@@ -142,7 +142,7 @@
                 if (orders[elevator][i][0] == currentFloor) {
                     orders[elevator][i][2] = 0;
                 } else {
-                    orders[elevator][i][2] * neglectModifier;
+                    orders[elevator][i][2] *= (1 + neglectModifier);
                 }
                 if (orders[elevator][i][2] > highestOrderCount) {
                     highestOrderFloor = orders[elevator][i][0];
@@ -154,7 +154,7 @@
                 if (destinations[elevator][i][0] == currentFloor) {
                     destinations[elevator][i][2] = 0;
                 } else {
-                    destinations[elevator][i][2] * neglectModifier;
+                    destinations[elevator][i][2] *= (1 + neglectModifier);
                 }
             }
             
@@ -178,7 +178,7 @@
                 if (destinations[elevator][i][0] == currentFloor) {
                     destinations[elevator][i][2] = 0;
                 } else {
-                    destinations[elevator][i][2] * neglectModifier;
+                    destinations[elevator][i][2] *= (1 + neglectModifier);
                 }
                 if (destinations[elevator][i][2] > highestOrderCount) {
                     highestOrderFloor = destinations[elevator][i][0];
@@ -190,7 +190,7 @@
                 if (orders[elevator][i][0] == currentFloor) {
                     orders[elevator][i][2] = 0;
                 } else {
-                    orders[elevator][i][2] * neglectModifier;
+                    orders[elevator][i][2] *= (1 + neglectModifier);
                 }
             }
 

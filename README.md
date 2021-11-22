@@ -1,4 +1,4 @@
-# elevatorsaga
+# elevatorsaga solution WIP
 My WIP solution to [play.elevatorsaga.com](https://play.elevatorsaga.com/)
 
 ## Getting Started
